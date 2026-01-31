@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi Live System Monitor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Raspberry Pi Live System Monitor</h1>
+
+    <ul>
+        <li>CPU Usage: <span id="cpu">--</span>%</li>
+        <li>Memory Usage: <span id="memory">--</span>%</li>
+        <li>Disk Usage: <span id="disk">--</span>%</li>
+        <li>Temperature: <span id="temperature">--</span> °C</li>
+        <li>Uptime: <span id="uptime">--</span> seconds</li>
+    </ul>
+
+    <script>
+        async function fetchStats() {
+            const res = await fetch("/api/stats");
+            const data = await res.json();
+
+            document.getElementById("cpu").innerText = data.cpu;
+            document.getElementById("memory").innerText = data.memory;
+            document.getElementById("disk").innerText = data.disk;
+            document.getElementById("temperature").innerText = data.temperature;
+            document.getElementById("uptime").innerText = data.uptime;
+        }
+
+        fetchStats();
+        setInterval(fetchStats, 1000);
+    </script>
+</body>
+</html>
