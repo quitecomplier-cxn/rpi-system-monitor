@@ -1,5 +1,10 @@
 # Raspberry Pi Live System Monitor
 
+# Dashboard Preview
+
+![Raspberry Pi System Monitor Dashboard](screenshoots/dashboard.png)
+
+
 A lightweight, real-time system monitoring dashboard built with **Python (Flask)** for **Raspberry Pi**. This project exposes live system metrics via a REST API and visualizes them in a clean web dashboard.
 
 Designed to demonstrate practical **systems programming**, **backend APIs**, and **real-time monitoring** skills suitable for a **Junior Software / Embedded / DevOps Engineer** portfolio.
