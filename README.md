@@ -180,7 +180,7 @@ License — free to use, modify, and distribute.
 ## Author
 
 **Charles Norgbe**
-Junior Software / Systems Engineer
+Junior Electronic / Systems Engineer
 GitHub: [https://github.com/quitecomplier-cxn](https://github.com/quitecomplier-cxn)
 
 ---
